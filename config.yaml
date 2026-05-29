@@ -1,0 +1,14 @@
+sites:
+  - url: https://ubmh.wikidot.com
+    wiki: ubmh
+  - url: https://backroom-wiki-cn.wikidot.com
+    wiki: backroom-wiki-cn
+  - url: https://scp-wiki-cloud.wikidot.com
+    wiki: backroom-wiki-cn
+
+wikit:
+  graphql_url: https://wikit.unitreaty.org/apiv1/graphql
+  notify_url: https://wikit.unitreaty.org/api/notify
+  users_url: https://wikit.unitreaty.org/api/notification-users
+
+schedule: "*/5 * * * *"
