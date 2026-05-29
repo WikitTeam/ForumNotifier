@@ -11,4 +11,4 @@ wikit:
   notify_url: https://wikit.unitreaty.org/api/notify
   users_url: https://wikit.unitreaty.org/api/notification-users
 
-schedule: "*/5 * * * *"
+schedule: "*/10 * * * *"
