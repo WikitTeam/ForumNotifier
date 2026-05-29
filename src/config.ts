@@ -18,7 +18,7 @@ export function loadConfig(): NotifierConfig {
   if (!parsed.wikit?.notify_url) throw new Error("config: wikit.notify_url required");
   if (!parsed.wikit?.users_url) throw new Error("config: wikit.users_url required");
 
-  parsed.schedule ??= "*/5 * * * *";
+  parsed.schedule ??= "*/10 * * * *";
 
   cached = parsed;
   return parsed;
