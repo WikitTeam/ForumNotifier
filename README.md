@@ -25,7 +25,7 @@ wikit:
   notify_url: https://wikit.unitreaty.org/api/notify
   users_url: https://wikit.unitreaty.org/api/notification-users
 
-schedule: "*/5 * * * *"
+schedule: "*/10 * * * *"
 ```
 
 配置文件路径可通过环境变量 `NOTIFIER_CONFIG` 覆盖。
