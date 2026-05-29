@@ -1,0 +1,37 @@
+name: WikitNotifier Cycle
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Run notification cycle
+        run: npm run cycle
+        env:
+          NOTIFIER_CONFIG: ./config.yaml
+          NOTIFY_TOKEN: ${{ secrets.NOTIFY_TOKEN }}
+
+      - name: Commit checkpoint
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add checkpoint.json
+          git diff --cached --quiet || git commit -m "update checkpoint"
+          git push
