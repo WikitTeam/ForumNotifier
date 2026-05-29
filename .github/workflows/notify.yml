@@ -3,6 +3,8 @@ name: WikitNotifier Cycle
 on:
   schedule:
     - cron: '1 * * * *'
+  repository_dispatch:
+    types: [trigger-notifier]
   workflow_dispatch:
 
 permissions:
