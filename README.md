@@ -72,9 +72,9 @@ npm run dev
     "username": "user1",
     "wikidotId": 12345,
     "enableMention": true,
-    "subscriptions": ["your-wiki.wikidot.com/forum/t-123"],
+    "subscriptions": ["your-site.wikidot.com/forum/t-123"],
     "unsubscriptions": [],
-    "follow": ["your-wiki-2"],
+    "follow": ["your-site"],
     "unfollow": []
   }
 ]
