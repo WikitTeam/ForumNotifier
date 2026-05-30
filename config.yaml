@@ -5,6 +5,8 @@ sites:
     wiki: backroom-wiki-cn
   - url: https://scp-wiki-cloud.wikidot.com
     wiki: scp-wiki-cloud
+  - url: https://wikit-test.wikidot.com
+    wiki: wikit-test
 
 wikit:
   graphql_url: https://wikit.unitreaty.org/apiv1/graphql
