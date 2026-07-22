@@ -1,3 +1,5 @@
+[![License](https://img.shields.io/badge/license-AGPL--3.0-purple.svg)](./LICENSE)
+
 # ForumNotifier
 
 Wikidot论坛活动通知服务。监控指定站点的论坛，检测回复、提及和订阅事件，调用WikitAPI处理用户数据并向订阅用户的站内信箱发送通知。
@@ -89,3 +91,7 @@ npm run dev
 | `unsubscriptions` | 屏蔽的 URL 片段列表 |
 | `follow` | 只接收这些站点的通知 |
 | `unfollow` | 不接收这些站点的通知 |
+
+## Acknowledgments
+
+本项目的通知检测逻辑（回复/提及/订阅检测）在设计上参考了 [Crimone/Scoparia](https://github.com/Crimone/Scoparia)，并针对Wikit生态做了重新实现。
