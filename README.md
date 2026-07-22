@@ -94,4 +94,4 @@ npm run dev
 
 ## Acknowledgments
 
-本项目的通知检测逻辑（回复/提及/订阅检测）在设计上参考了 [Crimone/Scoparia](https://github.com/Crimone/Scoparia)，并针对Wikit生态做了重新实现。
+本项目的通知检测逻辑（回复/提及/订阅检测）在设计上参考了 [Scoparia](https://github.com/Crimone/Scoparia)，并针对Wikit生态做了重新实现。
